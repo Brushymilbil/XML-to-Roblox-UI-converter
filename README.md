@@ -2,11 +2,13 @@
 This is a simple converter that parses xml &amp; creates UI elements from it. It is handwritten so don't expect it to perform better than Auto - Generated ones these days...
 
 **How to use:**
+
 1. Move the modules somewhere the _client_ can access, because this is a _client sided_ module.
 2. Make sure all of the modules are in one folder, or at least share the same parent.
 3. load on the _client_.
 
 **Tutorial:**
+
  basically, this is just xml but all of the tags have been replaced with ROBLOX UI types like TextButton etc...
  and all of the objects inside of other objects become children instead of editing the 'content' property like you'd see in XAML.
  if you don't know xml, then here is a simple format you can follow when creating elements:
@@ -17,7 +19,8 @@ This is a simple converter that parses xml &amp; creates UI elements from it. It
    </typename>
  ```
 
-**Formatting**
+**Formatting:**
+
 in xml, everything is a string, so obviously, every supported data type has a specific format.
 Below the formats of the currently supported types:
 
@@ -36,7 +39,8 @@ Below the formats of the currently supported types:
 * event listeners:
   the name of the event listener inside of the listeners dictionary.
 
-**Usage**
+**Usage:**
+
 so you can actually just ignore the other modules, because they are just required internally but you can just use the BloxmlStarter.load() function, which calls all module's function and returns the result.
 Obvisouly this will error if your xml is invalid (or a bug occurs).
 
