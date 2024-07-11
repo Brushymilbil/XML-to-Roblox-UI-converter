@@ -41,8 +41,8 @@ Below the formats of the currently supported types:
 
 **Usage:**
 
-so you can actually just ignore the other modules, because they are just required internally but you can just use the BloxmlStarter.load() function, which calls all module's function and returns the result.
-Obvisouly this will error if your xml is invalid (or a bug occurs).
+so you can actually just ignore the other modules, because they are just required internally but you can just use the `BloxmlStarter.load()` function, which calls all module's function and returns the result.
+Obviously this will error if your xml is invalid (or a bug occurs).
 
 example of a simple button that prints "clicked" when activated:
 ```luau
