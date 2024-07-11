@@ -66,6 +66,6 @@ result[1] = --your screen gui
 ```
 
 you can obviously also just call each module manually.
-**comenting is supported btw, so you can use <!-- --> in your source, not that you would want to**
+**comenting is supported btw, so you can use `<!-- -->` in your source, not that you would want to**
 
 Thanks for reading!
