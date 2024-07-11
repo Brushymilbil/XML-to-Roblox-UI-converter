@@ -10,12 +10,12 @@ This is a simple converter that parses xml &amp; creates UI elements from it. It
  basically, this is just xml but all of the tags have been replaced with ROBLOX UI types like TextButton etc...
  and all of the objects inside of other objects become children instead of editing the 'content' property like you'd see in XAML.
  if you don't know xml, then here is a simple format you can follow when creating elements:
- \```xml
+ ```xml
    <typename Property = "value"/> <!-- for when your element does not have children -->
    <typename Property = "value">
      <!--children go here -->
    </typename>
- \```
+ ```
 
 **Formatting**
 in xml, everything is a string, so obviously, every supported data type has a specific format.
@@ -41,7 +41,7 @@ so you can actually just ignore the other modules, because they are just require
 Obvisouly this will error if your xml is invalid (or a bug occurs).
 
 example of a simple button that prints "clicked" when activated:
-\```luau
+```luau
 local starter = require (path to BloxmlStarter)
 local listeners = {
   ["ButtonClick"] = function(sender, ...)
@@ -59,7 +59,7 @@ local source = [[
 --the result is an array of UI elements, they aren't parented to any screen Gui by default.
 local result = starter.load(source, listeners)
 result[1] = --your screen gui
-\```
+```
 
 you can obviously also just call each module manually.
 **comenting is supported btw, so you can use <!-- --> in your source, not that you would want to**
